@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Models.Option
+namespace Domain.Models.PollOptions
 {
     public class PollOption : Entity
     {

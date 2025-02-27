@@ -14,6 +14,7 @@ public class VoteConfiguration : IEntityTypeConfiguration<Vote>
 {
     public void Configure(EntityTypeBuilder<Vote> builder)
     {
-        throw new NotImplementedException();
+        builder.Property(x => x.Id)
+           .ValueGeneratedOnAdd();
     }
 }

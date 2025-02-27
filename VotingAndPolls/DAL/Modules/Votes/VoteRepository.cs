@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Modules.Vote
+namespace DAL.Modules.Votes;
+
+internal class VoteRepository
 {
-    internal class VoteRepository
-    {
-    }
 }

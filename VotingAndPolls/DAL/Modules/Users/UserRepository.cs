@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Modules.User
+namespace DAL.Modules.Users
 {
     internal class UserRepository
     {

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Domain.Models.Poll;
+using Domain.Models.Polls;
+using Domain.Models.Users;
 
 namespace DAL.Modules.Polls
 {
@@ -7,7 +8,12 @@ namespace DAL.Modules.Polls
     {
         public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Poll> builder)
         {
-            throw new NotImplementedException();
+            builder.Property(x => x.Id)
+           .ValueGeneratedOnAdd();
+
+            builder.HasOne<User>()
+            .WithMany()
+            .HasForeignKey(x => x.UserID);
         }
     }
 }

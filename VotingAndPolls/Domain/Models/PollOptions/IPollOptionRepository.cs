@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Models.PollOption
+namespace Domain.Models.PollOptions
 {
     internal interface IPollOptionRepository
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Models.Vote
+namespace Domain.Models.Votes
 {
     public class Vote : Entity
     {

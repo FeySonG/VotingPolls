@@ -1,10 +1,11 @@
 ﻿using Domain.Abstractions;
-using Domain.Models.Option;
+using Domain.Models.PollOptions;
 
-namespace Domain.Models.Poll
+namespace Domain.Models.Polls
 {
     public class Poll : Entity
     {
+        public required long UserID { get; set; }
         public required string Title { get; set; }
         public string Description { get; set; } = string.Empty;
         public DateTime CreatedDate { get; set; } = DateTime.Now;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Models.Poll
+namespace Domain.Models.Polls
 {
     public enum PollRelevance
     {
