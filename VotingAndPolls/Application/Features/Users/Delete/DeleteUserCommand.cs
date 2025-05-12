@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Application.Abstractions;
 
 namespace Application.Features.Users.Delete
 {
-    internal class DeleteUserCommand
-    {
-    }
+    public record DeleteUserCommand(long id) : ICommand<bool>;
 }

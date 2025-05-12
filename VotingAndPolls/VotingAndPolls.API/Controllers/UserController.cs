@@ -10,7 +10,6 @@ namespace VotingAndPolls.API.Controllers
 {
     [ApiController]
     [Route("api/users")]
-
     public class UserController(ISender sender) : ControllerBase
     {
         [HttpGet]
@@ -21,7 +20,7 @@ namespace VotingAndPolls.API.Controllers
             return Ok(response);
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetById(long id)
         {
             var response = await sender.Send(new GetByIdUserQuery(id));

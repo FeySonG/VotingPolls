@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Application.Abstractions;
+using Application.Contracts.Users;
 
-namespace Application.Features.Users.GetById
-{
-    internal class GetByIdUserQuery
-    {
-    }
-}
+namespace Application.Features.Users.GetById;
+
+public record GetByIdUserQuery(long Id) : IQuery<GetUserDto>;
+

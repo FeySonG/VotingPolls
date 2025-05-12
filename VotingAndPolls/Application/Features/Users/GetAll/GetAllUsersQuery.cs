@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Application.Abstractions;
+using Application.Contracts.Users;
 
-namespace Application.Features.Users.GetAllUser
-{
-    internal class GetAllUsersQuery
-    {
-    }
-}
+namespace Application.Features.Users.GetAll;
+
+public class GetAllUsersQuery : IQuery<List<GetUserDto>>;

@@ -14,7 +14,8 @@ public class AuthController(ISender sender) : ControllerBase
     public async Task<IActionResult> Registration(CreateUserDto dto)
     {
         var response = await sender.Send(new RegistrUserCommand(dto));
-        if(response = false) return BadRequest(response);
+        if(response == false) return BadRequest(response);
+
         return Ok(response);
     }
 
